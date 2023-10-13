@@ -54,7 +54,7 @@ MAKEFLAGS += -j$(JOBS)
 MAKEFLAGS += --no-print-directory
 MAKEFLAGS += --output-sync
 
-GLUON_MAKE = $(MAKE) SHELL="'sh -x'" --trace V=sc -C $(GLUON_BUILD_DIR)
+GLUON_MAKE = set -x ; $(MAKE) --trace V=sc -C $(GLUON_BUILD_DIR)
 GLUON_GIT = git -C $(GLUON_BUILD_DIR)
 
 
