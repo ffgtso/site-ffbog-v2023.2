@@ -19,7 +19,7 @@
 # SECRET_KEY_FILE - Path to your ECDSA signing key
 # OPKG_KEY_FOLDER - Path to your OpenWrt package signing key
 #########################
-
+BROKEN=0
 
 ## Setup Build environment variables
 include release.mk
