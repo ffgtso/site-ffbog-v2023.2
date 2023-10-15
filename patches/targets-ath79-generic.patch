@@ -1,8 +1,17 @@
+From 3cb846ace73966f73493593048ae3735cd2e6c4f Mon Sep 17 00:00:00 2001
+From: wusel <wusel+src@uu.org>
+Date: Sun, 15 Oct 2023 06:13:30 +0200
+Subject: [PATCH] ath79-generic-patch
+
+---
+ targets/ath79-generic | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
 diff --git a/targets/ath79-generic b/targets/ath79-generic
-index aafcb22f..608057f5 100644
+index c2ad771..cd1fd93 100644
 --- a/targets/ath79-generic
 +++ b/targets/ath79-generic
-@@ -468,6 +468,10 @@ device('tp-link-eap225-outdoor-v1', 'tplink_eap225-outdoor-v1', {
+@@ -477,6 +477,10 @@ device('tp-link-eap225-outdoor-v1', 'tplink_eap225-outdoor-v1', {
  	packages = ATH10K_PACKAGES_QCA9888,
  })
  
@@ -10,21 +19,23 @@ index aafcb22f..608057f5 100644
 +	packages = ATH10K_PACKAGES_QCA9888,
 +})
 +
- device('tp-link-tl-wdr3500-v1', 'tplink_tl-wdr3500-v1')
- device('tp-link-tl-wdr3600-v1', 'tplink_tl-wdr3600-v1')
- device('tp-link-tl-wdr4300-v1', 'tplink_tl-wdr4300-v1')
-@@ -581,3 +585,14 @@ device('ubiquiti-unifi-ap-outdoor+', 'ubnt_unifi-ap-outdoor-plus', {
+ device('tp-link-re355-v1', 'tplink_re355-v1', {
+ 	manifest_aliases = {
+ 		'tp-link-re355', -- upgrade from OpenWrt 19.07
+@@ -607,3 +611,13 @@ device('ubiquiti-unifi-ap-outdoor+', 'ubnt_unifi-ap-outdoor-plus', {
  })
  
  device('ubiquiti-unifi-ap-pro', 'ubnt_unifi-ap-pro')
 +
-+-- device('ubiquiti-rocket-5ac-lite', 'ubnt_rocket-5ac-lite', {
-+--	packages = ATH10K_PACKAGES_QCA9880,
-+-- })
-+
++device('ubiquiti-rocket-5ac-lite', 'ubnt_rocket-5ac-lite', {
++	packages = ATH10K_PACKAGES_QCA9880,
++})
 +
 +-- Zyxel
 +
 +device('zyxel-nbg6616', 'zyxel_nbg6616', {
 +	packages = ATH10K_PACKAGES_QCA9880,
 +})
+-- 
+2.30.2
+
