@@ -29,7 +29,7 @@ GLUON_BUILD_DIR := gluon-build
 export GLUON_SITEDIR := ..
 PATCH_DIR := patches
 SECRET_KEY_FILE ?= ${HOME}/build/secret-build
-OPKG_KEY_FOLDER ?= $(HOME)/.key-build
+OPKG_KEY_FOLDER ?= $(HOME)/build/.key-build
 
 ## Create version scheme
 EXP_FALLBACK = $(shell date '+%Y%m%d')
