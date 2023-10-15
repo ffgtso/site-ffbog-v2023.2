@@ -1,6 +1,4 @@
 define GLUON_TARGETS :=
-ipq40xx-generic
-ipq806x-generic
 ramips-mt7621
 x86-64
 endef
