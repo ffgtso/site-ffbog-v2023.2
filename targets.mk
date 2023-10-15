@@ -10,7 +10,6 @@ ipq806x-generic
 lantiq-xrx200
 lantiq-xway
 mediatek-mt7622
-mediatek-filogic
 mpc85xx-p1010
 mpc85xx-p1020
 ramips-mt7620
@@ -22,6 +21,7 @@ x86-generic
 x86-geode
 x86-legacy
 x86-64
+mediatek-filogic
 endef
 
 ifneq ($(BROKEN),0)
