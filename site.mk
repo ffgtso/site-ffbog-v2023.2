@@ -47,6 +47,12 @@ ffac-autoupdater-wifi-fallback
 ffac-ssid-changer
 iwinfo
 respondd-module-airtime
+ffgt-banner
+ffgt-config-mode-wizard
+ffgt-nachtruhe
+ffgt-preserve-mods
+ffgt-speedtest
+ffho-ap-timer
 endef
 GLUON_SITE_PACKAGES := $(GLUON_SITE_PACKAGES:\n= )
 
