@@ -294,7 +294,7 @@ else
 	mkdir -p output/
 	rm -rf output/*
 endif
-    for target in $(GLUON_TARGETS); do touch build_$${target}.log ; rm build_$${target}.log ; done
+	for target in $(GLUON_TARGETS); do touch build_$${target}.log ; rm build_$${target}.log ; done
 	@echo
 
 clean: gluon-clean output-clean devices-clean
