@@ -95,7 +95,7 @@ endif""").render(
 targets = {}
 targetdir = os.path.join(GLUON_DIR, 'targets')
 for targetfile in os.listdir(targetdir):
-	if targetfile in ['generic', 'targets.mk'] or targetfile.endswith('.inc'):
+	if targetfile in ['generic', 'targets.mk-dev'] or targetfile.endswith('.inc'):
 		continue
 
 	target = Target(targetfile)
