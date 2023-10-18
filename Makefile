@@ -146,8 +146,6 @@ manifest: build
 	done
 
 build: gluon-prepare output-clean
-	echo $$(date +%s) > ${GLUON_BUILD_DIR}/openwrt/version.date
-	(cd ${GLUON_BUILD_DIR}/openwrt ; git add version.date ; git commit -m "Build with current time.")
 	+@for target in $(GLUON_TARGETS); do \
 		echo ''; \
 		echo ''Building target $$target''; \
