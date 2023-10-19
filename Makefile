@@ -169,9 +169,9 @@ endif
 
 gluon-prepare: gluon-update ffgt-patch | .modules
 
-PATCH_FILES = $(shell find $(PATCH_DIR)/ -type f -name '*.patch')
+PATCH_FILES = $(shell find $(PATCH_DIR)/ -type f -name '*.patch' | sort -n)
 ffgt-patch: gluon-update
-	@echo 'Applying patches…'
+	@echo 'Applying patches ...'
 	@if [ `$(GLUON_GIT) branch --list patched` ]; then \
 		$(GLUON_GIT) branch -D patched; \
 	fi
