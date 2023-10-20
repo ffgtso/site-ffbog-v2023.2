@@ -54,6 +54,8 @@ ffgt-preserve-mods
 ffgt-speedtest
 ffho-ap-timer
 wpad-basic-mbedtls
+ucode
+libmbedtls12
 endef
 GLUON_SITE_PACKAGES := $(GLUON_SITE_PACKAGES:\n= )
 
