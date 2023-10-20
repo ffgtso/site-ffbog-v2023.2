@@ -171,6 +171,8 @@ gluon-prepare: gluon-update ffgt-patch | .modules
 
 PATCH_FILES = $(shell find $(PATCH_DIR)/ -type f -name '*.patch' | sort -n)
 ffgt-patch: gluon-update
+	cat /dev/null >build-targets.list
+	for target in $(GLUON_TARGETS); do touch build_$${target}.log ; rm build_$${target}.log ; echo $${target} >>build-targets.list ; done
 	@echo 'Applying patches ...'
 	@if [ `$(GLUON_GIT) branch --list patched` ]; then \
 		$(GLUON_GIT) branch -D patched; \
@@ -292,7 +294,6 @@ else
 	mkdir -p output/
 	rm -rf output/*
 endif
-	for target in $(GLUON_TARGETS); do touch build_$${target}.log ; rm build_$${target}.log ; done
 	@echo
 
 clean: gluon-clean output-clean devices-clean
