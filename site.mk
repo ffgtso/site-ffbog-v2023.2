@@ -53,6 +53,7 @@ ffgt-nachtruhe
 ffgt-preserve-mods
 ffgt-speedtest
 ffho-ap-timer
+wpad-basic-mbedtls
 endef
 GLUON_SITE_PACKAGES := $(GLUON_SITE_PACKAGES:\n= )
 
